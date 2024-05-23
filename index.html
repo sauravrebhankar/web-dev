@@ -4,8 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Team</title>
-    <!-- Link to CSS Styles -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.ibb.co/DMrxw6M/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            backdrop-filter: blur(5px);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .company-name {
+            text-align: center;
+            background-color: #6c5ce7;
+            padding: 20px;
+            color: white;
+            font-size: 28px;
+            border-radius: 8px 8px 0 0;
+        }
+        .intro {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .team-header {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+        .team-header h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #6c5ce7;
+        }
+        .team-header .dotted-line {
+            border-bottom: 2px dotted #ddd;
+            margin: 0 auto;
+            width: 60%;
+        }
+        .team-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .team-section h2 {
+            background-color: #6c5ce7;
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .team-member {
+            width: 150px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #6c5ce7;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+        .team-member:hover img {
+            transform: scale(1.1);
+        }
+        .team-member h3 {
+            font-size: 16px;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        .team-member p {
+            font-size: 14px;
+            color: #777;
+        }
+        .section-divider {
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+        }
+        .section-divider h2 {
+            background-color: #6c5ce7;
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .ribbon-left,
+            .ribbon-right {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -20,10 +128,119 @@
         <div class="team-section">
             <h2>Leadership / Management Team</h2>
             <div class="team">
-                <!-- Leadership / Management Team members will be included here -->
+                <div class="team-member">
+                    <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Founder">
+                    <h3>[Founder Name 1]</h3>
+                    <p>Founder, CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Founder">
+                    <h3>[Founder Name 2]</h3>
+                    <p>Founder, CEO</p>
+                </div>
+            </div>
+            <div class="team">
+                <div class="team-member">
+                    <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="VP">
+                    <h3>[VP Name]</h3>
+                    <p>VP, Development & Growth</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="VP">
+                    <h3>[VP Name]</h3>
+                    <p>VP, Sales & Marketing</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="VP">
+                    <h3>[VP Name]</h3>
+                    <p>VP, Finance & Operation</p>
+                </div>
             </div>
         </div>
-        <!-- Other team sections will be included here -->
+        <div class="section-divider">
+            <h2>Development Team</h2>
+        </div>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Developer">
+                <h3>[Developer Name]</h3>
+                <p>Team Lead, SE</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Developer">
+                <h3>[Developer Name]</h3>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Developer">
+                <h3>[Developer Name]</h3>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Developer">
+                <h3>[Developer Name]</h3>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Developer">
+                <h3>[Developer Name]</h3>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Developer">
+                <h3>[Developer Name]</h3>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Developer">
+                <h3>[Developer Name]</h3>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+        <div class="section-divider">
+            <h2>Sales and Marketing Team</h2>
+        </div>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Employee">
+                <h3>[Employee Name]</h3>
+                <p>Team Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Employee">
+                <h3>[Employee Name]</h3>
+                <p>Sales Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Employee">
+                <h3>[Employee Name]</h3>
+                <p>Sales Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Employee">
+                <h3>[Employee Name]</h3>
+                <p>Sales Officer</p>
+            </div>
+        </div>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Employee">
+                <h3>[Employee Name]</h3>
+                <p>Marketing Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Employee">
+                <h3>[Employee Name]</h3>
+                <p>Marketing Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/564x/23/c1/03/23c103fcf8312f7b905c42fe421caf5f.jpg" alt="Employee">
+                <h3>[Employee Name]</h3>
+                <p>Marketing Officer</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
